@@ -5,8 +5,6 @@ const cors = require('cors');
 const helmet = require('helmet');
 const POKEDEX = require('./pokedex.json');
 
-console.log(process.env.API_TOKEN)
-
 const app = express();
 
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
